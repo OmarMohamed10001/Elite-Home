@@ -50,32 +50,6 @@
   overflow-y: auto;
 }
 
-/* Large phones / small tablets */
-@media (min-width: 576px) {
-  .mega-menu.show {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Desktop navbar (Bootstrap lg breakpoint): floating panel */
-@media (min-width: 992px) {
-  .mega-menu.show {
-    position: absolute !important;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1200px, calc(100vw - 2rem));
-    max-height: none;
-    overflow: visible;
-  }
-}
-
-/* Wide screens: your original 4-column layout */
-@media (min-width: 1200px) {
-  .mega-menu.show {
-    grid-template-columns: 1.4fr repeat(3, 1fr);
-  }
-}
-
 /* Small fixes inside the menu */
 .villa-image,
 .modern-image {
@@ -1200,4 +1174,30 @@ textarea.form-control {
 .btn-form:hover {
   transform: translateY(-6px);
   background-color: var(--accent-color);
+}
+
+/* Large phones / small tablets */
+@media (min-width: 576px) {
+  .mega-menu.show {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop navbar (Bootstrap lg breakpoint): floating panel */
+@media (min-width: 992px) {
+  .mega-menu.show {
+    position: absolute !important;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1200px, calc(100vw - 2rem));
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+/* Wide screens: your original 4-column layout */
+@media (min-width: 1200px) {
+  .mega-menu.show {
+    grid-template-columns: 1.4fr repeat(3, 1fr);
+  }
 }
